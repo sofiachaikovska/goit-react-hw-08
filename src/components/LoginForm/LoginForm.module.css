@@ -1,0 +1,76 @@
+.loginFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px solid #4d5ae5;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+  width: 500px;
+}
+
+.loginFormLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loginFormLabelAccent {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginFormField {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: black;
+  padding: 8px 16px;
+  resize: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loginFormField:focus {
+  border: 1.5px solid #4d5ae5;
+  outline: none;
+}
+
+.loginFormField::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginFormErrorMessage {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(201, 58, 58);
+}
+
+.loginFormBtn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: #4d5ae5;
+  color: white;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-transform: capitalize;
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loginFormBtn:hover {
+  background-color: #404bbf;
+}
+
+.loginFormBtn:focus {
+  background-color: #404bbf;
+}

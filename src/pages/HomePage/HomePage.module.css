@@ -1,0 +1,46 @@
+.homePageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  margin-block-end: 0;
+}
+
+.titleAccent {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4d5ae5;
+}
+
+.status {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin-bottom: 40px;
+}
+
+.homePageLink {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4d5ae5;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-transform: capitalize;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.homePageLink:hover {
+  background-color: #404bbf;
+}
+
+.homePageLink:focus {
+  background-color: #404bbf;
+}

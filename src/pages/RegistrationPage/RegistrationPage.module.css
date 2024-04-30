@@ -1,0 +1,18 @@
+.registrationPageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.registrationTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  margin-block-end: 0;
+  margin-bottom: 20px;
+}
+
+.registrationPageAccent {
+  color: #4d5ae5;
+}
