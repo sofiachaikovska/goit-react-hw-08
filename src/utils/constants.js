@@ -20,6 +20,7 @@ export const AUTH_SLICE_INITAL_STATE = {
   userData: null,
   token: null,
   isLoading: false,
+  isRefreshing: false,
   isError: false,
 };
 

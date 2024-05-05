@@ -1,5 +1,6 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
 import { fetchContacts, addContact, deleteContact } from "./operations";
+import { logout } from "../auth/operations";
 import { CONTACTS_INITAL_STATE } from "../../utils/constants";
 
 export const contactsSlice = createSlice({
@@ -35,6 +36,10 @@ export const contactsSlice = createSlice({
       .addCase(deleteContact.rejected, (state) => {
         state.isLoading = false;
         state.isError = "Failed to delete contact";
+      })
+      // LOGOUT
+      .addCase(logout.fulfilled, () => {
+        return CONTACTS_INITAL_STATE;
       })
 
       .addMatcher(
